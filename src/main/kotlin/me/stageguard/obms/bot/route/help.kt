@@ -6,7 +6,7 @@ import me.stageguard.obms.bot.RouteLock.routeLock
 import net.mamoe.mirai.event.GroupMessageSubscribersBuilder
 
 fun GroupMessageSubscribersBuilder.help() {
-    routeLock(startWithIgnoreCase(".help")) {
+    routeLock(startWithIgnoreCase(".osu help")) {
         atReply("""See: ${PluginConfig.helpLink}""")
     }
 }
